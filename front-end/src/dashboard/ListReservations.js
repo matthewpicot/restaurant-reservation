@@ -1,6 +1,7 @@
 import React from "react";
 
 function ListReservations({ reservations, date, cancelHandler }) {
+  try{
   const displayReservations = reservations.map((reservation, index) => {
     if (
       reservation.status !== "finished" ||
@@ -48,10 +49,11 @@ function ListReservations({ reservations, date, cancelHandler }) {
           </td>
         </tr>
       );
-    } 
+    }
     return null;
   });
-
+  }
+  catch (err){ console.error(err); console.log(err)}
   return (
     <div>
       <div>
