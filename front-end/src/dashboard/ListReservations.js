@@ -52,8 +52,6 @@ function ListReservations({ reservations, date, cancelHandler }) {
     }
     return null;
   });
-  }
-  catch (err){ console.error(err); console.log(err)}
   return (
     <div>
       <div>
@@ -76,6 +74,9 @@ function ListReservations({ reservations, date, cancelHandler }) {
       </div>
     </div>
   );
+}
+catch (err){ console.error(err); console.log(err);
+  return null}
 }
 
 export default ListReservations;
