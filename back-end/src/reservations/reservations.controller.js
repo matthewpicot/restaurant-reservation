@@ -145,7 +145,7 @@ async function reservationExists(req, res, next) {
     return next();
   }
   next({
-    status: 400,
+    status: 404,
     message: `Reservation id ${reservationId} cannot be found.`,
   });
 }

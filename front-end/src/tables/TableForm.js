@@ -39,7 +39,7 @@ function TableForm({
         <br />
         <button
           className="btn btn-outline-danger btn-sm mr-1"
-          onClick={() => history.goBack()}
+          onClick={(event) => {event.preventDefault(); history.goBack()}}
         >
           Cancel
         </button>
