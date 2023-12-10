@@ -10,7 +10,7 @@ function SearchForm({ changeHandler, formData, submitHandler }) {
         <label htmlFor="mobile_number">Mobile Number</label>
         <div>
           <input className="form-control"
-            type="text"
+            type="number"
             name="mobile_number"
             id="mobile_number"
             placeholder="Enter a customer's mobile number"
