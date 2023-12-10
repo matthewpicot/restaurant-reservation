@@ -10,11 +10,12 @@ function SearchForm({ changeHandler, formData, submitHandler }) {
         <label htmlFor="mobile_number">Mobile Number</label>
         <div>
           <input className="form-control"
-            type="number"
+            type="tel"
             name="mobile_number"
             id="mobile_number"
             placeholder="Enter a customer's mobile number"
             onChange={changeHandler}
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required="required"
             value={formData.mobile_number}
           />

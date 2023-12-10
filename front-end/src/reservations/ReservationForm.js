@@ -34,10 +34,11 @@ function ReservationForm({ formData, changeHandler, submitHandler }) {
         <label htmlFor="mobile_number">
           Mobile Number:
           <input className="form-control"
-            type="number"
+            type="tel"
             name="mobile_number"
             id="mobile_number"
             value={formData.mobile_number}
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             onChange={changeHandler}
             required
           />
